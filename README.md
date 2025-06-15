@@ -151,7 +151,7 @@ mymod.json — a structured JSON containing:
 
 
 mymod.pnml — an XML file conforming to PNML schema, with
-- **<place>, <transition>, <arc>**
+- **<place>,<transition>,<arc>**
 - **custom toolspecific sections to embed priorities and arc types**
 
 
