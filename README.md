@@ -8,6 +8,29 @@ This repository provides:
 ---
 
 ## Overview
+Inspired by classical process calculi like CCS and CSP, RPPA supports:
+
+1. Sequential composition (.)
+
+2. Parallel execution (||)
+
+3. Non-deterministic choice (|)
+
+4. Prioritized execution (^n)
+
+5.Encapsulated modules (via ModuleName())
+
+Each RPPA expression derives a compositional structure of transitions and places that can be visualized or executed as a Petri net. This derivation process is formalized through recursive descent parsing and AST-to-Petri-net compilation.
+
+FlowNet DSL and the RedLang RPPA Parser together allow you to:
+
+Define workflows in a concise text DSL (.rppa).
+
+Parse them into an AST featuring actions, sequences, parallels, choices, priorities, and module calls.
+
+Compile the AST into a Petri-net model (PetriModule) with unique places, transitions, and arcs.
+
+Export JSON and PNML formats for visualization, analysis, or execution.
 
 FlowNet DSL and the RedLang RPPA Parser together allow you to:
 
