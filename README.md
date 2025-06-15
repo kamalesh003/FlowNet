@@ -146,7 +146,7 @@ The parser reads your .rppa file and converts it into an abstract syntax tree (A
 The final PetriModule is emitted in:
 
 mymod.json — a structured JSON containing:
-- **moduleName,entry,exit**
+- **moduleName : entry and exit**
 - **lists of places, transitions (with priority), and arcs (with types)**
 
 
