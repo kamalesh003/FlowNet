@@ -1,0 +1,559 @@
+{
+  "arcs": [
+    {
+      "dst": "T8",
+      "id": "entry0_to_T8",
+      "src": "entry0",
+      "type": "P2T"
+    },
+    {
+      "dst": "P4",
+      "id": "T8_to_P4",
+      "src": "T8",
+      "type": "T2P"
+    },
+    {
+      "dst": "P5",
+      "id": "T8_to_P5",
+      "src": "T8",
+      "type": "T2P"
+    },
+    {
+      "dst": "T12",
+      "id": "P4_to_T12",
+      "src": "P4",
+      "type": "P2T"
+    },
+    {
+      "dst": "P11",
+      "id": "T12_to_P11",
+      "src": "T12",
+      "type": "T2P"
+    },
+    {
+      "dst": "T17",
+      "id": "P11_to_T17",
+      "src": "P11",
+      "type": "P2T"
+    },
+    {
+      "dst": "P13",
+      "id": "T17_to_P13",
+      "src": "T17",
+      "type": "T2P"
+    },
+    {
+      "dst": "P14",
+      "id": "T17_to_P14",
+      "src": "T17",
+      "type": "T2P"
+    },
+    {
+      "dst": "T20",
+      "id": "P13_to_T20",
+      "src": "P13",
+      "type": "P2T"
+    },
+    {
+      "dst": "P19",
+      "id": "T20_to_P19",
+      "src": "T20",
+      "type": "T2P"
+    },
+    {
+      "dst": "T22",
+      "id": "P19_to_T22",
+      "src": "P19",
+      "type": "P2T"
+    },
+    {
+      "dst": "P21",
+      "id": "T22_to_P21",
+      "src": "T22",
+      "type": "T2P"
+    },
+    {
+      "dst": "T23",
+      "id": "P21_to_T23",
+      "src": "P21",
+      "type": "P2T"
+    },
+    {
+      "dst": "P15",
+      "id": "T23_to_P15",
+      "src": "T23",
+      "type": "T2P"
+    },
+    {
+      "dst": "T24",
+      "id": "P14_to_T24",
+      "src": "P14",
+      "type": "P2T"
+    },
+    {
+      "dst": "P16",
+      "id": "T24_to_P16",
+      "src": "T24",
+      "type": "T2P"
+    },
+    {
+      "dst": "T18",
+      "id": "P15_to_T18",
+      "src": "P15",
+      "type": "P2T"
+    },
+    {
+      "dst": "T18",
+      "id": "P16_to_T18",
+      "src": "P16",
+      "type": "P2T"
+    },
+    {
+      "dst": "P10",
+      "id": "T18_to_P10",
+      "src": "T18",
+      "type": "T2P"
+    },
+    {
+      "dst": "T26",
+      "id": "P10_to_T26",
+      "src": "P10",
+      "type": "P2T"
+    },
+    {
+      "dst": "P25",
+      "id": "T26_to_P25",
+      "src": "T26",
+      "type": "T2P"
+    },
+    {
+      "dst": "T_call29",
+      "id": "P25_to_T_call29",
+      "src": "P25",
+      "type": "P2T"
+    },
+    {
+      "dst": "entry27",
+      "id": "T_call29_to_entry27",
+      "src": "T_call29",
+      "type": "T2P"
+    },
+    {
+      "dst": "T_ret30",
+      "id": "exit28_to_T_ret30",
+      "src": "exit28",
+      "type": "P2T"
+    },
+    {
+      "dst": "P6",
+      "id": "T_ret30_to_P6",
+      "src": "T_ret30",
+      "type": "T2P"
+    },
+    {
+      "dst": "T32",
+      "id": "P5_to_T32",
+      "src": "P5",
+      "type": "P2T"
+    },
+    {
+      "dst": "P31",
+      "id": "T32_to_P31",
+      "src": "T32",
+      "type": "T2P"
+    },
+    {
+      "dst": "T37",
+      "id": "P31_to_T37",
+      "src": "P31",
+      "type": "P2T"
+    },
+    {
+      "dst": "P33",
+      "id": "T37_to_P33",
+      "src": "T37",
+      "type": "T2P"
+    },
+    {
+      "dst": "P34",
+      "id": "T37_to_P34",
+      "src": "T37",
+      "type": "T2P"
+    },
+    {
+      "dst": "T40",
+      "id": "P33_to_T40",
+      "src": "P33",
+      "type": "P2T"
+    },
+    {
+      "dst": "P39",
+      "id": "T40_to_P39",
+      "src": "T40",
+      "type": "T2P"
+    },
+    {
+      "dst": "T42",
+      "id": "P39_to_T42",
+      "src": "P39",
+      "type": "P2T"
+    },
+    {
+      "dst": "P41",
+      "id": "T42_to_P41",
+      "src": "T42",
+      "type": "T2P"
+    },
+    {
+      "dst": "T43",
+      "id": "P41_to_T43",
+      "src": "P41",
+      "type": "P2T"
+    },
+    {
+      "dst": "P35",
+      "id": "T43_to_P35",
+      "src": "T43",
+      "type": "T2P"
+    },
+    {
+      "dst": "T45",
+      "id": "P34_to_T45",
+      "src": "P34",
+      "type": "P2T"
+    },
+    {
+      "dst": "P44",
+      "id": "T45_to_P44",
+      "src": "T45",
+      "type": "T2P"
+    },
+    {
+      "dst": "T48",
+      "id": "P44_to_T48",
+      "src": "P44",
+      "type": "P2T"
+    },
+    {
+      "dst": "P47",
+      "id": "T48_to_P47",
+      "src": "T48",
+      "type": "T2P"
+    },
+    {
+      "dst": "T49",
+      "id": "P47_to_T49",
+      "src": "P47",
+      "type": "P2T"
+    },
+    {
+      "dst": "P46",
+      "id": "T49_to_P46",
+      "src": "T49",
+      "type": "T2P"
+    },
+    {
+      "dst": "T50",
+      "id": "P46_to_T50",
+      "src": "P46",
+      "type": "P2T"
+    },
+    {
+      "dst": "P36",
+      "id": "T50_to_P36",
+      "src": "T50",
+      "type": "T2P"
+    },
+    {
+      "dst": "T38",
+      "id": "P35_to_T38",
+      "src": "P35",
+      "type": "P2T"
+    },
+    {
+      "dst": "T38",
+      "id": "P36_to_T38",
+      "src": "P36",
+      "type": "P2T"
+    },
+    {
+      "dst": "P7",
+      "id": "T38_to_P7",
+      "src": "T38",
+      "type": "T2P"
+    },
+    {
+      "dst": "T9",
+      "id": "P6_to_T9",
+      "src": "P6",
+      "type": "P2T"
+    },
+    {
+      "dst": "T9",
+      "id": "P7_to_T9",
+      "src": "P7",
+      "type": "P2T"
+    },
+    {
+      "dst": "P3",
+      "id": "T9_to_P3",
+      "src": "T9",
+      "type": "T2P"
+    },
+    {
+      "dst": "T52",
+      "id": "P3_to_T52",
+      "src": "P3",
+      "type": "P2T"
+    },
+    {
+      "dst": "P51",
+      "id": "T52_to_P51",
+      "src": "T52",
+      "type": "T2P"
+    },
+    {
+      "dst": "T_call55",
+      "id": "P51_to_T_call55",
+      "src": "P51",
+      "type": "P2T"
+    },
+    {
+      "dst": "entry53",
+      "id": "T_call55_to_entry53",
+      "src": "T_call55",
+      "type": "T2P"
+    },
+    {
+      "dst": "T_ret56",
+      "id": "exit54_to_T_ret56",
+      "src": "exit54",
+      "type": "P2T"
+    },
+    {
+      "dst": "P2",
+      "id": "T_ret56_to_P2",
+      "src": "T_ret56",
+      "type": "T2P"
+    },
+    {
+      "dst": "T57",
+      "id": "P2_to_T57",
+      "src": "P2",
+      "type": "P2T"
+    },
+    {
+      "dst": "exit1",
+      "id": "T57_to_exit1",
+      "src": "T57",
+      "type": "T2P"
+    }
+  ],
+  "entry": "entry0",
+  "exit": "exit1",
+  "moduleName": "mymod",
+  "places": [
+    {
+      "id": "entry0"
+    },
+    {
+      "id": "exit1"
+    },
+    {
+      "id": "P2"
+    },
+    {
+      "id": "P3"
+    },
+    {
+      "id": "P4"
+    },
+    {
+      "id": "P5"
+    },
+    {
+      "id": "P6"
+    },
+    {
+      "id": "P7"
+    },
+    {
+      "id": "P10"
+    },
+    {
+      "id": "P11"
+    },
+    {
+      "id": "P13"
+    },
+    {
+      "id": "P14"
+    },
+    {
+      "id": "P15"
+    },
+    {
+      "id": "P16"
+    },
+    {
+      "id": "P19"
+    },
+    {
+      "id": "P21"
+    },
+    {
+      "id": "P25"
+    },
+    {
+      "id": "entry27"
+    },
+    {
+      "id": "exit28"
+    },
+    {
+      "id": "P31"
+    },
+    {
+      "id": "P33"
+    },
+    {
+      "id": "P34"
+    },
+    {
+      "id": "P35"
+    },
+    {
+      "id": "P36"
+    },
+    {
+      "id": "P39"
+    },
+    {
+      "id": "P41"
+    },
+    {
+      "id": "P44"
+    },
+    {
+      "id": "P46"
+    },
+    {
+      "id": "P47"
+    },
+    {
+      "id": "P51"
+    },
+    {
+      "id": "entry53"
+    },
+    {
+      "id": "exit54"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "T8",
+      "priority": 0
+    },
+    {
+      "id": "T9",
+      "priority": 0
+    },
+    {
+      "id": "T12",
+      "priority": 2
+    },
+    {
+      "id": "T17",
+      "priority": 0
+    },
+    {
+      "id": "T18",
+      "priority": 0
+    },
+    {
+      "id": "T20",
+      "priority": 1
+    },
+    {
+      "id": "T22",
+      "priority": 0
+    },
+    {
+      "id": "T23",
+      "priority": 0
+    },
+    {
+      "id": "T24",
+      "priority": 0
+    },
+    {
+      "id": "T26",
+      "priority": 3
+    },
+    {
+      "id": "T_call29",
+      "priority": 0
+    },
+    {
+      "id": "T_ret30",
+      "priority": 0
+    },
+    {
+      "id": "T32",
+      "priority": 4
+    },
+    {
+      "id": "T37",
+      "priority": 0
+    },
+    {
+      "id": "T38",
+      "priority": 0
+    },
+    {
+      "id": "T40",
+      "priority": 5
+    },
+    {
+      "id": "T42",
+      "priority": 0
+    },
+    {
+      "id": "T43",
+      "priority": 0
+    },
+    {
+      "id": "T45",
+      "priority": 2
+    },
+    {
+      "id": "T48",
+      "priority": 0
+    },
+    {
+      "id": "T49",
+      "priority": 0
+    },
+    {
+      "id": "T50",
+      "priority": 0
+    },
+    {
+      "id": "T52",
+      "priority": 8
+    },
+    {
+      "id": "T_call55",
+      "priority": 0
+    },
+    {
+      "id": "T_ret56",
+      "priority": 0
+    },
+    {
+      "id": "T57",
+      "priority": 0
+    }
+  ]
+}

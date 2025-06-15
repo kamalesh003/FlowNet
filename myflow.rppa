@@ -1,0 +1,5 @@
+[ [ x.y ]^1 || z ]^2 
+. alpha()^3 
+|| [ [ m.n ]^5 || [ o.p.q ]^2 ]^4 
+. final_cleanup()^8 
+. cleanup
