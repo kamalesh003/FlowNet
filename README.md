@@ -8,19 +8,6 @@ This repository provides:
 ---
 
 ## Overview
-Inspired by classical process calculi like CCS and CSP, RPPA supports:
-
-1. Sequential composition (.)
-
-2. Parallel execution (||)
-
-3. Non-deterministic choice (|)
-
-4. Prioritized execution (^n)
-
-5.Encapsulated modules (via ModuleName())
-
-Each RPPA expression derives a compositional structure of transitions and places that can be visualized or executed as a Petri net. This derivation process is formalized through recursive descent parsing and AST-to-Petri-net compilation.
 
 FlowNet DSL and the RedLang RPPA Parser together allow you to:
 
@@ -38,6 +25,24 @@ FlowNet DSL and the RedLang RPPA Parser together allow you to:
 - **Parse** them into an AST featuring actions, sequences, parallels, choices, priorities, and module calls.
 - **Compile** the AST into a Petri-net model (`PetriModule`) with unique places, transitions, and arcs.
 - **Export** JSON and PNML formats for visualization, analysis, or execution.
+
+
+Inspired by classical process calculi like CCS and CSP, RPPA supports:
+
+- **Sequential composition**
+
+- **Parallel execution (||)**
+
+- **Non-deterministic choice (|)**
+
+- **Prioritized execution (^n)**
+
+- **Encapsulated modules (via ModuleName())**
+
+Each RPPA expression derives a compositional structure of transitions and places that can be visualized or executed as a Petri net. This derivation process is formalized through recursive descent parsing and AST-to-Petri-net compilation.
+
+
+
 
 ---
 
@@ -107,6 +112,15 @@ OK(invalid): a^^2
 ---
 
 ## Compiling a Workflow
+
+**myflow.rppa**
+```bash
+[ [ x.y ]^1 || z ]^2 
+. alpha()^3 
+|| [ [ m.n ]^5 || [ o.p.q ]^2 ]^4 
+. final_cleanup()^8 
+. cleanup
+```
 
 To parse and compile an RPPA file:
 
