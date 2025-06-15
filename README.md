@@ -24,7 +24,7 @@ FlowNet DSL and the RedLang RPPA Parser together allow you to:
 - **Define** workflows in a concise text DSL (`.rppa`).
 - **Parse** them into an AST featuring actions, sequences, parallels, choices, priorities, and module calls.
 - **Compile** the AST into a Petri-net model (`PetriModule`) with unique places, transitions, and arcs.
-- **Export** JSON and PNML formats for visualization, analysis, or execution.
+- **Export** JSON and PNML formats for future visualization, analysis, or execution.
 
 
 Inspired by classical process calculi like CCS and CSP, RPPA supports:
@@ -133,6 +133,28 @@ This emits:
 ```text
 Emitted mymod.json and mymod.pnml
 ```
+
+
+The parser reads your .rppa file and converts it into an abstract syntax tree (AST).The AST is passed to the code generation engine (CodegenVisitor) which:
+
+- **Assigns unique place and transition IDs**
+
+- **Builds a Petri-net model by wiring transitions and places**
+
+- **Honors priority (^) and module calls**
+
+The final PetriModule is emitted in:
+
+mymod.json — a structured JSON containing:
+- **moduleName, entry, exit**
+- **lists of places, transitions (with priority), and arcs (with types)**
+
+
+mymod.pnml — an XML file conforming to PNML schema, with
+- **<place>, <transition>, <arc>**
+- **custom <toolspecific> sections to embed priorities and arc types**
+
+
 
 ---
 
