@@ -1,0 +1,92 @@
+**ActionNode**
+
+    Condition: leaf node representing an atomic action.
+
+    Rule:
+
+        Create a fresh transition “T” (no priority).
+
+        Connect the incoming place → T → outgoing place.
+
+
+**SequenceNode**
+
+    Condition: an ordered list of children.
+
+    Rule:
+
+        For each child in order, carve out a fresh intermediate place (except after the last child).
+
+        Compile childᵢ from its own input place to that intermediate place (or final output for the last).
+
+        Chain them so tokens flow sequentially through every child.
+
+**ParallelNode**
+
+    Condition: two sub‑expressions that should run concurrently.
+
+    Rule:
+
+        Insert a “fork” transition: split the single input place into two new branch‑input places.
+
+        Compile left and right sub‑trees independently, from their branch‑inputs to branch‑outputs.
+
+        Insert a “join” transition: consume tokens from both branch‑outputs and emit a token to the single output place.
+
+**ChoiceNode**
+
+    Condition: an exclusive choice (either left or right branch may fire).
+
+    Rule:
+
+        Compile both branches in parallel, but both share the same input and output places—either branch can consume the token and deposit it at the output.
+
+**PrioNode**
+
+    Condition: a single child with an associated integer priority.
+
+    Rule:
+
+        Create a fresh transition “T” carrying that priority.
+
+        Link input place → T → a fresh intermediate place.
+
+        Compile the child from that intermediate place to the final output.
+
+**CallModuleNode**
+
+    Condition: invocation of another named module.
+
+    Rule:
+
+        Recursively generate (and cache) the target module’s entire net.
+
+        Inline its places, transitions and arcs into the current module.
+
+        Create two new transitions, “call” and “return”.
+
+            call: from the current input place into the submodule’s entry place.
+
+            return: from the submodule’s exit place into the current output place.
+
+
+
+**Lexical tokens:**
+
+| Token            | Pattern                  | AST action                                 |
+| ---------------- | ------------------------ | ------------------------------------------ |
+| **IDENT**        | `[A-Za-z_][A-Za-z0-9_]*` | yields a bare `ActionNode(name=IDENT)`     |
+| **NUMBER**       | `[0-9]+`                 | used only in priority suffixes (`^NUMBER`) |
+| **DOT**          | `\.`                     | sequence operator                          |
+| **DOUBLE\_PIPE** | `\|\|`                   | parallel operator                          |
+| **CHOICE\_OP**   | `\|` (single pipe)       | choice operator                            |
+| **LBRACK**       | `\[`                     | start a grouped sub‑expression             |
+| **RBRACK**       | `\]`                     | end a grouped sub‑expression               |
+| **LPAREN**       | `\(`                     | start a module‑call argument list          |
+| **RPAREN**       | `\)`                     | end a module‑call argument list            |
+| **CARET**        | `\^`                     | introduces a priority suffix               |
+
+
+
+
+
