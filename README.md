@@ -67,9 +67,7 @@ Each RPPA expression derives a compositional structure of transitions and places
    - A C++17 compiler
    - [nlohmann/json](https://github.com/nlohmann/json)
 
-   ```bash
-    g++ -std=c++17 -O2 -Wall -Ijson/include -o redlang rppa_parser.cpp
-    ```
+ 
 
 1. **Compile**:
 
